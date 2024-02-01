@@ -9,3 +9,15 @@ shuttle-axum = "0.37.0"
 shuttle-runtime = "0.37.0"
 tokio = "1.28.2"
 tracing = "0.1.40"
+
+shuttle-shared-db = { version = "0.37.0", features = ["postgres", "sqlx"] }
+sqlx = { version = "0.7.1", default-features = false, features = [
+    "tls-native-tls",
+    "macros",
+    "postgres",
+    "uuid",
+    "chrono",
+    "json",
+    "runtime-tokio-rustls"
+] }
+shuttle-secrets = "0.37.0"

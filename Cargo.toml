@@ -4,3 +4,4 @@ members = [
     "api/shuttle",
     "shared"
 ]
+resolver = "2"
